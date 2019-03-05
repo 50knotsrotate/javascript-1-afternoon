@@ -1,7 +1,7 @@
 //////////////////PROBLEM 1////////////////////
 
 //Create a variable called myName that is a string data type
-var myName = 'Patrick'
+var myName = "Patrick";
 
 //Code here
 
@@ -9,7 +9,7 @@ var myName = 'Patrick'
 
 //Create a variable called myAge that is a number data type
 
-var myAge = 24
+var myAge = 24;
 
 //Code here
 
@@ -17,13 +17,13 @@ var myAge = 24
 
 //Create a variable called lovesCode that is a boolean data type
 
-var lovesCode = !false
+var lovesCode = !false;
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-var greatestFear = undefined
+var greatestFear = undefined;
 
 //////////////////PROBLEM 5////////////////////
 
@@ -39,7 +39,7 @@ var devMountainGoal = null;
 //plus the value of the name parameter.
 
 function greeting(name) {
-  return "Hello " + name
+  return "Hello, " + name;
 }
 
 //////////////////PROBLEM 7////////////////////
@@ -47,24 +47,23 @@ function greeting(name) {
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-const newGreeting = function (name) {
-  return 'Hello ' + name
-
-}
+const newGreeting = function(name) {
+  return "Hello, " + name;
+};
 
 //////////////////PROBLEM 8////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-const finalgreeting = (name) => "Hello " + name
+const finalGreeting = name => "Hello, " + name;
 
 //////////////////PROBLEM 9////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var groceries = ['apples', 'milk', 'eggs', 'bread'];
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 10////////////////////
 
@@ -74,11 +73,11 @@ var groceries = ['apples', 'milk', 'eggs', 'bread'];
 //and goodBoy (a boolean).
 
 var dog = {
-  name: 'Mugsy',
-  color: 'beige',
+  name: "Mugsy",
+  color: "beige",
   age: 7,
-  goodboy: false
-}
+  goodBoy: false
+};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
@@ -87,7 +86,7 @@ var devMountainClassPet = dog.name;
 
 //////////////////PROBLEM 11////////////////////
 
-//Write a function called nameCheck that takes in a name parameter. 
+//Write a function called nameCheck that takes in a name parameter.
 //nameCheck should check if the name equals 'Steven'. If it does,
 // return 'What is up Steven?'
 //If the name parameter is Bryan, return 'Hey Bryan!'
@@ -95,8 +94,11 @@ var devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in
 
 function nameCheck(name) {
-  return name == 'Steven' ? "What is up Steven?" : `Cool name, ${name}`
-
+  return name == "Steven"
+    ? "What is up Steven?"
+    : name === "Bryan"
+    ? "Hey Bryan!"
+    : `Cool name, ${name}`;
 }
 
 //////////////////PROBLEM 12////////////////////
@@ -106,13 +108,13 @@ function nameCheck(name) {
 // The add function should return the two parameters added together
 
 function add(num1, num2) {
-  return num1 + num2
+  return num1 + num2;
 }
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-var mathSum = add(4, 2)
+var mathSum = add(4, 3);
 
 //////////////////PROBLEM 13////////////////////
 
@@ -124,9 +126,14 @@ var mathSum = add(4, 2)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder(color) {
-  return color == 'red' ? 'red is a great color' : color == 'green' ? 'green is a solid favorite color' : color == 'black' ? 'so trendy' : 'you need to evaluate your favorite color choice'
+  return color == "red"
+    ? "red is a great color"
+    : color == "green"
+    ? "green is a solid favorite color"
+    : color == "black"
+    ? "so trendy"
+    : "you need to evaluate your favorite color choice";
 }
-
 
 //////////////////PROBLEM 14////////////////////
 
@@ -166,13 +173,12 @@ let pondScope = ["duck", "realDuck"];
 
 //Create a variable called age with your age assigned to you
 
-var age = 24
+var age = 24;
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get olde
 
 age += 1;
 
-
 // Good news! We can live forever. Set your age to 999
-age = 999
+age = 999;
